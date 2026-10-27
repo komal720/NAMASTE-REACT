@@ -1,39 +1,13 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
 
+// JSX Heading Element
+const jsxHeading = (
+  <h1 className="head" tabIndex={5}>
+    Namaste React using jsxHeading
+  </h1>
+);
 
-
-
-
-
-
-
-
-
-
-
-
-const parent  = React.createElement(  "div", {id:"parent"},[
-
-  React.createElement("div",{id:"child"},
-
-    [
-      React.createElement("h1",{}," get intership in may 2027& got 10 lpa "),
-      React.createElement("h2",{},"10 CGPA IN sem 5"),
-    ]),
-
-    React.createElement("div",{id:"child"},
-
-    [
-      React.createElement("h1",{}," get intership in may 2027& got 10 lpa "),
-      React.createElement("h2",{},"10 CGPA IN sem 5"),
-    ]),
-
-
-  
-]);
-
-  console.log(parent);
-
-
-    const root = ReactDOM.createRoot(document.getElementById("root"));
-
-    root.render(parent);
+// Creates the root and renders the heading
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(jsxHeading);
